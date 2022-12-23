@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">NL East Black Jack</h1>
+    <main id="main">
+        <h2 id="begin">Begin!</h2>
+        <section class="row1">
+            <div id="player-box">
+                <h2>Player: <span id="playerscore">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealerscore">0</span></h2>
+            </div>
+        </section>
+
+        <section class="row2">
+            <div id="buttons">
+                <button id="hit">Hit</button>
+                <button id="hold">Hold</button>
+                <button id="reshuffle">Reshuffle</button>
+            </div>
+        </section>
+
+        <section class="row3">
+            <h3>Scoreboard: </h3>
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Ties</th>
+                </tr>
+                <tr>
+                    <td><span id="Wins">0</span></td>
+                    <td><span id="Losses">0</span></td>
+                    <td><span id="Ties">0</span></td>
+                </tr>
+            </table>
+        </section> 
+    </main>
+    <div class="images">
+       <!-- 
+        <img id="phillyFanatic2" src="./images/PhillyFanatic2.jpg" alt="philly fanatic 2">
+        <img id="phillyFanatic3" src="./images/PhillyFanatic3.jpg" alt="philly fanatic 3">
+        <img id="phillyFanatic4" src="./images/PhillyFanatic4.jpg" alt="philly fanatic 4">
+        <img id="phillyFanatic5" src="./images/PhillyFanatic5.jpg" alt="philly fanatic 5">
+        <img id="phillyFanatic6" src="./images/PhillyFanatic6.jpg" alt="philly fanatic 6">
+        <img id="phillyFanatic7" src="./images/PhillyFanatic7.jpg" alt="philly fanatic 7">
+        <img id="phillyFanatic8" src="./images/PhillyFanatic8.jpg" alt="philly fanatic 8">
+        <img id="phillyFanatic9" src="./images/PhillyFanatic9.jpg" alt="philly fanatic 9">
+        <img id="phillyFanatic10" src="./images/PhillyFanatic10.jpg" alt="philly fanatic 10">
+        <img id="phillyFanaticA" src="./images/PhillyFanaticA.jpg" alt="philly fanatic A">
+        <img id="phillyFanaticJ" src="./images/PhillyFanaticJ.jpg" alt="philly fanatic J">
+        <img id="phillyFanaticK" src="./images/PhillyFanaticK.jpg" alt="philly fanatic Q">
+        <img id="phillyFanaticQ" src="./images/PhillyFanaticQ.jpg" alt="philly fanatic K">
+
+        <img id="mrMet2" src="./images/MrMet2.jpg" alt="mr met 2">
+        <img id="mrMet3" src="./images/MrMet3.jpg" alt="mr met 3">
+        <img id="mrMet4" src="./images/MrMet4.jpg" alt="mr met 4">
+        <img id="mrMet5" src="./images/MrMet5.jpg" alt="mr met 5">
+        <img id="mrMet6" src="./images/MrMet6.jpg" alt="mr met 6">
+        <img id="mrMet7" src="./images/MrMet7.jpg" alt="mr met 7">
+        <img id="mrMet8" src="./images/MrMet8.jpg" alt="mr met 8">
+        <img id="mrMet9" src="./images/MrMet9.jpg" alt="mr met 9">
+        <img id="mrMet10" src="./images/MrMet10.jpg" alt="mr met 10">
+        <img id="mrMetA" src="./images/MrMetA.jpg" alt="mr met A">
+        <img id="mrMetJ" src="./images/MrMetJ.jpg" alt="mr met J">
+        <img id="mrMetK" src="./images/MrMetK.jpg" alt="mr met K">
+        <img id="mrMetQ" src="./images/MrMetQ.jpg" alt="mr met Q">
+
+        <img id="marlins2" src="./images/Marlins2.jpg" alt="marlins 2">
+        <img id="marlins3" src="./images/Marlins3.jpg" alt="marlins 3">
+        <img id="marlins4" src="./images/Marlins4.jpg" alt="marlins 4">
+        <img id="marlins5" src="./images/Marlins5.jpg" alt="marlins 5">
+        <img id="marlins6" src="./images/Marlins6.jpg" alt="marlins 6">
+        <img id="marlins7" src="./images/Marlins7.jpg" alt="marlins 7">
+        <img id="marlins8" src="./images/Marlins8.jpg" alt="marlins 8">
+        <img id="marlins9" src="./images/Marlins9.jpg" alt="marlins 9">
+        <img id="marlins10" src="./images/Marlins10.jpg" alt="marlins 10">
+        <img id="marlinsA" src="./images/MarlinsA.jpg" alt="marlins A">
+        <img id="marlinsJ" src="./images/MarlinsJ.jpg" alt="marlins J">
+        <img id="marlinsK" src="./images/MarlinsK.jpg" alt="marlins K">
+        <img id="marlinsQ" src="./images/MarlinsQ.jpg" alt="marlins Q">
+
+        <img id="braves2" src="./images/Braves2.jpg" alt="braves 2">
+        <img id="braves3" src="./images/Braves3.jpg" alt="braves 3">
+        <img id="braves4" src="./images/Braves4.jpg" alt="braves 4">
+        <img id="braves5" src="./images/Braves5.jpg" alt="braves 5">
+        <img id="braves6" src="./images/Braves6.jpg" alt="braves 6">
+        <img id="braves7" src="./images/Braves7.jpg" alt="braves 7">
+        <img id="braves8" src="./images/Braves8.jpg" alt="braves 8">
+        <img id="braves9" src="./images/Braves9.jpg" alt="braves 9">
+        <img id="braves10" src="./images/Braves10.jpg" alt="braves 10">
+        <img id="bravesA" src="./images/BravesA.jpg" alt="braves A">
+        <img id="bravesJ" src="./images/BravesJ.jpg" alt="braves J">
+        <img id="bravesK" src="./images/BravesK.jpg" alt="braves K">
+        <img id="bravesQ" src="./images/BravesQ.jpg" alt="braves Q">
+    -->
+    </div>
+    <script src="./index.js"></script>
+    </body>
+</html>
